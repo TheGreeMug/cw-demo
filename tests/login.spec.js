@@ -29,7 +29,7 @@ test("@quarantine Test2 - Play With The Table", async ({page}) => {
     await t1r1sort.click();
 
     const t1r1cell2 = table1.locator('tbody > tr:nth-child(1) > td:nth-child(2)');
-    await expect(t1r1cell2).toHaveText('Franka');
+    await expect(t1r1cell2).toHaveText('Frank');
 
     // Add waits at the end of the test
     // Wait for the table to be visible
