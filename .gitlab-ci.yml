@@ -30,7 +30,7 @@ e2e_smoke_mr:
     - if: $CI_PIPELINE_SOURCE == "push"
     - if: $CI_PIPELINE_SOURCE == "web"
   script:
-    - npx playwright test --grep @smoke
+    - npx playwright test --project=chrome --grep @smoke
   timeout: 20m
 
 e2e_regression_nightly:
