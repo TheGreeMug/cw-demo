@@ -41,7 +41,7 @@ test("@quarantine Test2 - Play With The Table", async ({page}) => {
     // Optional: Add a timeout for debugging purposes
     await page.waitForTimeout(2000); // Wait for 2 seconds
 
-    await expect(t1r1cell2).toHaveText('Franka');
+    await expect(t1r1cell2).toHaveText('Frank');
 
     // Wait for the table to be visible
     await table1.waitFor({ state: 'visible' });
@@ -59,5 +59,5 @@ test("@quarantine Test2 - Play With The Table", async ({page}) => {
     await table1.waitFor({ state: 'attached' });
 
     // Wait for a specific condition
-    await page.waitForFunction(() => document.querySelector('#table1').innerText.includes('Franka'));
+    await page.waitForFunction(() => document.querySelector('#table1').innerText.includes('Frank'));
 });

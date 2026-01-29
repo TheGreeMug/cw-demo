@@ -19,7 +19,7 @@
     Error: expect(locator).toHaveText(expected) failed
 
     Locator:  locator('#table1').locator('tbody > tr:nth-child(1) > td:nth-child(2)')
-    Expected: "Franka"
+    Expected: "Frank"
     Received: "Frank"
     Timeout:  5000ms
 
@@ -32,7 +32,7 @@
 
       30 |
       31 |     const t1r1cell2 = table1.locator('tbody > tr:nth-child(1) > td:nth-child(2)');
-    > 32 |     await expect(t1r1cell2).toHaveText('Franka');
+    > 32 |     await expect(t1r1cell2).toHaveText('Frank');
          |                             ^
       33 |
       34 |     // Add waits at the end of the test
@@ -81,7 +81,7 @@
     Error: expect(locator).toHaveText(expected) failed
 
     Locator:  locator('#table1').locator('tbody > tr:nth-child(1) > td:nth-child(2)')
-    Expected: "Franka"
+    Expected: "Frank"
     Received: "Frank"
     Timeout:  5000ms
 
@@ -94,7 +94,7 @@
 
       30 |
       31 |     const t1r1cell2 = table1.locator('tbody > tr:nth-child(1) > td:nth-child(2)');
-    > 32 |     await expect(t1r1cell2).toHaveText('Franka');
+    > 32 |     await expect(t1r1cell2).toHaveText('Frank');
          |                             ^
       33 |
       34 |     // Add waits at the end of the test
@@ -143,7 +143,7 @@
     Error: expect(locator).toHaveText(expected) failed
 
     Locator:  locator('#table1').locator('tbody > tr:nth-child(1) > td:nth-child(2)')
-    Expected: "Franka"
+    Expected: "Frank"
     Received: "Frank"
     Timeout:  5000ms
 
@@ -156,7 +156,7 @@
 
       30 |
       31 |     const t1r1cell2 = table1.locator('tbody > tr:nth-child(1) > td:nth-child(2)');
-    > 32 |     await expect(t1r1cell2).toHaveText('Franka');
+    > 32 |     await expect(t1r1cell2).toHaveText('Frank');
          |                             ^
       33 |
       34 |     // Add waits at the end of the test
