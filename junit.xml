@@ -1,0 +1,188 @@
+<testsuites id="" name="" tests="12" failures="3" skipped="0" errors="0" time="11.716628">
+<testsuite name="example.spec.js" timestamp="2026-01-29T20:05:14.332Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.677" errors="0">
+<testcase name="test1 - has title" classname="example.spec.js" time="0.801">
+</testcase>
+<testcase name="@smoke test2 - get started link" classname="example.spec.js" time="0.876">
+</testcase>
+</testsuite>
+<testsuite name="login.spec.js" timestamp="2026-01-29T20:05:14.332Z" hostname="chromium" tests="2" failures="1" skipped="0" time="9.583" errors="0">
+<testcase name="@smoke Test1 - Login Page - Valid Credentials" classname="login.spec.js" time="2.372">
+<system-out>
+<![CDATA[Navigated to login pagelocator('#username')
+]]>
+</system-out>
+</testcase>
+<testcase name="@quarantine Test2 - Play With The Table" classname="login.spec.js" time="7.211">
+<failure message="login.spec.js:15:5 @quarantine Test2 - Play With The Table" type="FAILURE">
+<![CDATA[  [chromium] › login.spec.js:15:5 › @quarantine Test2 - Play With The Table ────────────────────────
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  locator('#table1').locator('tbody > tr:nth-child(1) > td:nth-child(2)')
+    Expected: "Franka"
+    Received: "Frank"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveText" with timeout 5000ms
+      - waiting for locator('#table1').locator('tbody > tr:nth-child(1) > td:nth-child(2)')
+        9 × locator resolved to <td>Frank</td>
+          - unexpected value "Frank"
+
+
+      30 |
+      31 |     const t1r1cell2 = table1.locator('tbody > tr:nth-child(1) > td:nth-child(2)');
+    > 32 |     await expect(t1r1cell2).toHaveText('Franka');
+         |                             ^
+      33 |
+      34 |     // Add waits at the end of the test
+      35 |     // Wait for the table to be visible
+        at /Users/marius/IdeaProjects/pw-demo/tests/login.spec.js:32:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/login--quarantine-Test2---Play-With-The-Table-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/login--quarantine-Test2---Play-With-The-Table-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/login--quarantine-Test2---Play-With-The-Table-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/login--quarantine-Test2---Play-With-The-Table-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/login--quarantine-Test2---Play-With-The-Table-chromium/video.webm]]
+
+[[ATTACHMENT|test-results/login--quarantine-Test2---Play-With-The-Table-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="example.spec.js" timestamp="2026-01-29T20:05:14.332Z" hostname="firefox" tests="2" failures="0" skipped="0" time="2.644" errors="0">
+<testcase name="test1 - has title" classname="example.spec.js" time="1.184">
+</testcase>
+<testcase name="@smoke test2 - get started link" classname="example.spec.js" time="1.46">
+</testcase>
+</testsuite>
+<testsuite name="login.spec.js" timestamp="2026-01-29T20:05:14.332Z" hostname="firefox" tests="2" failures="1" skipped="0" time="10.261" errors="0">
+<testcase name="@smoke Test1 - Login Page - Valid Credentials" classname="login.spec.js" time="2.733">
+<system-out>
+<![CDATA[Navigated to login pagelocator('#username')
+]]>
+</system-out>
+</testcase>
+<testcase name="@quarantine Test2 - Play With The Table" classname="login.spec.js" time="7.528">
+<failure message="login.spec.js:15:5 @quarantine Test2 - Play With The Table" type="FAILURE">
+<![CDATA[  [firefox] › login.spec.js:15:5 › @quarantine Test2 - Play With The Table ─────────────────────────
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  locator('#table1').locator('tbody > tr:nth-child(1) > td:nth-child(2)')
+    Expected: "Franka"
+    Received: "Frank"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveText" with timeout 5000ms
+      - waiting for locator('#table1').locator('tbody > tr:nth-child(1) > td:nth-child(2)')
+        9 × locator resolved to <td>Frank</td>
+          - unexpected value "Frank"
+
+
+      30 |
+      31 |     const t1r1cell2 = table1.locator('tbody > tr:nth-child(1) > td:nth-child(2)');
+    > 32 |     await expect(t1r1cell2).toHaveText('Franka');
+         |                             ^
+      33 |
+      34 |     // Add waits at the end of the test
+      35 |     // Wait for the table to be visible
+        at /Users/marius/IdeaProjects/pw-demo/tests/login.spec.js:32:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/login--quarantine-Test2---Play-With-The-Table-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/login--quarantine-Test2---Play-With-The-Table-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/login--quarantine-Test2---Play-With-The-Table-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/login--quarantine-Test2---Play-With-The-Table-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/login--quarantine-Test2---Play-With-The-Table-firefox/video.webm]]
+
+[[ATTACHMENT|test-results/login--quarantine-Test2---Play-With-The-Table-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="example.spec.js" timestamp="2026-01-29T20:05:14.332Z" hostname="webkit" tests="2" failures="0" skipped="0" time="2.093" errors="0">
+<testcase name="test1 - has title" classname="example.spec.js" time="1.001">
+</testcase>
+<testcase name="@smoke test2 - get started link" classname="example.spec.js" time="1.092">
+</testcase>
+</testsuite>
+<testsuite name="login.spec.js" timestamp="2026-01-29T20:05:14.332Z" hostname="webkit" tests="2" failures="1" skipped="0" time="9.844" errors="0">
+<testcase name="@smoke Test1 - Login Page - Valid Credentials" classname="login.spec.js" time="2.729">
+<system-out>
+<![CDATA[Navigated to login pagelocator('#username')
+]]>
+</system-out>
+</testcase>
+<testcase name="@quarantine Test2 - Play With The Table" classname="login.spec.js" time="7.115">
+<failure message="login.spec.js:15:5 @quarantine Test2 - Play With The Table" type="FAILURE">
+<![CDATA[  [webkit] › login.spec.js:15:5 › @quarantine Test2 - Play With The Table ──────────────────────────
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  locator('#table1').locator('tbody > tr:nth-child(1) > td:nth-child(2)')
+    Expected: "Franka"
+    Received: "Frank"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveText" with timeout 5000ms
+      - waiting for locator('#table1').locator('tbody > tr:nth-child(1) > td:nth-child(2)')
+        9 × locator resolved to <td>Frank</td>
+          - unexpected value "Frank"
+
+
+      30 |
+      31 |     const t1r1cell2 = table1.locator('tbody > tr:nth-child(1) > td:nth-child(2)');
+    > 32 |     await expect(t1r1cell2).toHaveText('Franka');
+         |                             ^
+      33 |
+      34 |     // Add waits at the end of the test
+      35 |     // Wait for the table to be visible
+        at /Users/marius/IdeaProjects/pw-demo/tests/login.spec.js:32:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/login--quarantine-Test2---Play-With-The-Table-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/login--quarantine-Test2---Play-With-The-Table-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/login--quarantine-Test2---Play-With-The-Table-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/login--quarantine-Test2---Play-With-The-Table-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/login--quarantine-Test2---Play-With-The-Table-webkit/video.webm]]
+
+[[ATTACHMENT|test-results/login--quarantine-Test2---Play-With-The-Table-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
